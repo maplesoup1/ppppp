@@ -10,9 +10,6 @@ export default function Home() {
     <div>
       <Hero/>
       <About/>
-      <Contact/>
-      <Contact/>
-      <Contact/>
       <Footer/>
     </div>
   );

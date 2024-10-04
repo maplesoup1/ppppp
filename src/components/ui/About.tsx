@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
+import { Smartphone, Star } from "lucide-react";
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
           <div className="text-lg">
           &mdash;&mdash;   Get to know me
           </div> */}
-          </div>
+        </div>
         <div className="text-white opacity-80 leading-8">
           I graduated from UNSW with an undergraduate degree in Mathematics and
           graduated from Master's degree in Computer Science at USYD. I have
@@ -35,10 +36,15 @@ const About = () => {
           interface integration.{" "}
         </div>
         <div className="flex gap-10 space-x-4">
-        <Button className="text-white p-8 font-bold rounded-lg">Contact me</Button>
-        <Button className="text-white p-8 font-bold rounded-lg">Learn more</Button>
+          <Button className="text-white p-8 font-bold rounded-lg flex gap-4">
+            Contact me
+            <Smartphone />
+          </Button>
+          <Button className="text-white p-8 font-bold rounded-lg flex gap-4">
+            Download CV
+            <Star />
+          </Button>
         </div>
-
       </div>
       <div className="rounded-full w-96 h-96 bg-blue-300 absolute right-72 border-4 overflow-hidden flex justify-center items-center animate-border_animation">
         <Image src="/img/xft.png" width={400} height={100} alt="xft" />

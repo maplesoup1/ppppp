@@ -2,7 +2,8 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "./button";
-import { Star } from "lucide-react";
+import { Book } from "lucide-react";
+
 
 const Hero: React.FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState<number>(20);
@@ -75,10 +76,10 @@ const Hero: React.FC = () => {
             <Image src="/img/linkedin.png" width={50} height={10} alt="icon" />
             <Image src="/img/twitter.png" width={50} height={10} alt="icon" />
           </div>
-          <Button className="p-8 w-48 rounded-2xl font-bold flex gap-4">
-            Download CV
-            <Star />
+          <Button className="p-8 w-48 rounded-2xl font-bold flex gap-4 mt-10">Learn more
+            <Book/>
           </Button>
+
         </div>
       </div>
     </div>
