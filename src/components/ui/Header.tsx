@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ onGetInTouchClick }) => {
   }, []);
 
   const isActive = (path: string): string => {
-    return pathname === path ? "shadow-[0_4px6px-1px_var(--tw-shadow-color)] shadow-red-500/40" : "";
+    return pathname === path ? "shadow-[0_4px_6px_-1px_rgba(239,68,68,0.4)]" : "";
   };
 
   return (
@@ -82,7 +82,7 @@ const Header: React.FC<HeaderProps> = ({ onGetInTouchClick }) => {
         <Button
           variant="secondary"
           className="p-6 rounded-md bg-white text-black font-bold"
-          onClick={onGetInTouchClick} // 触发 ContactForm 的显示
+          onClick={onGetInTouchClick}
         >
           GET IN TOUCH
         </Button>
