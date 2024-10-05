@@ -1,11 +1,14 @@
-'use client'
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "./button";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onGetInTouchClick: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onGetInTouchClick }) => {
   const lastScrollY = useRef<number>(0);
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const pathname = usePathname();
@@ -46,7 +49,7 @@ const Header: React.FC = () => {
   }, []);
 
   const isActive = (path: string): string => {
-    return pathname === path ? "shadow-[0_4px_6px_-1px_var(--tw-shadow-color)] shadow-red-500/40" : "";
+    return pathname === path ? "shadow-[0_4px6px-1px_var(--tw-shadow-color)] shadow-red-500/40" : "";
   };
 
   return (
@@ -79,6 +82,7 @@ const Header: React.FC = () => {
         <Button
           variant="secondary"
           className="p-6 rounded-md bg-white text-black font-bold"
+          onClick={onGetInTouchClick} // 触发 ContactForm 的显示
         >
           GET IN TOUCH
         </Button>
