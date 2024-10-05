@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
 import { Smartphone, Star } from "lucide-react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -36,10 +37,12 @@ const About = () => {
           interface integration.{" "}
         </div>
         <div className="flex gap-10 space-x-4">
-          <Button className="text-white p-8 font-bold rounded-lg flex gap-4">
-            Contact me
-            <Smartphone />
-          </Button>
+          <Link href="/Contact">
+            <Button className="text-white p-8 font-bold rounded-lg flex gap-4">
+              Contact me
+              <Smartphone />
+            </Button>
+          </Link>
           <Button className="text-white p-8 font-bold rounded-lg flex gap-4">
             Download CV
             <Star />
