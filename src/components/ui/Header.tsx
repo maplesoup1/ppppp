@@ -51,7 +51,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`w-full h-20 p-7 flex bg-black text-white items-center shadow-2xl header-backdrop transition-transform duration-300 ${
+      className={`w-full h-20 p-7 flex bg-black text-white items-center shadow-2xl transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } sticky top-0 left-0 z-40`}
     >

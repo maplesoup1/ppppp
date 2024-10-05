@@ -68,6 +68,15 @@ const config: Config = {
       backgroundImage: {
         "global-background": "url('/img/background.png')",
       },
+      backdropBlur: {
+        '15': '15px',
+      },
+      backdropBrightness: {
+        '80': '.8',
+      },
+      backdropContrast: {
+        '50': '.5',
+      },
       keyframes: {
         border_animation: {
           "0%": { "border-radius": "60% 40% 30% 70%/60% 30% 70% 40%" },

@@ -16,10 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className="font-poppins background-image-blur-whitewash-backdrop">
-        <Header/>
-        {children}
-        {/* <ContactForm/> */}
+      <body className="font-poppins bg-global-background bg-cover bg-center backdrop-blur-15 backdrop-brightness-80 backdrop-contrast-50 z-[-1]">
+      <div className="relative z-10">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
