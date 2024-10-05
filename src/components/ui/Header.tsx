@@ -53,7 +53,7 @@ const Header: React.FC = () => {
     <header
       className={`w-full h-20 p-7 flex bg-black text-white items-center shadow-2xl header-backdrop transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } sticky top-0 left-0 z-50`}
+      } sticky top-0 left-0 z-40`}
     >
       <div className="absolute left-6 flex gap-5 items-center font-bold">
         <Image src="/img/resume.png" width={30} height={30} alt="logo" />

@@ -1,7 +1,7 @@
 import { Poppins } from 'next/font/google'
 import "./globals.css";
 import Header from '@/components/ui/Header';
-import Head from 'next/head';
+import ContactForm from '@/components/ui/ContactForm';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -19,6 +19,7 @@ export default function RootLayout({
       <body className="font-poppins background-image-blur-whitewash-backdrop">
         <Header/>
         {children}
+        {/* <ContactForm/> */}
       </body>
     </html>
   );
