@@ -58,7 +58,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
     try {
       const response = await axios.post("/api/send", formData);
-
       alert('Send successfully!');
       toast({
         description: "Email sent successfully!",
@@ -82,7 +81,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
       <div className="flex-grow overflow-y-auto">
         <div className="flex flex-col gap-10 p-4 sm:p-8">
-          <div className="text-4xl sm:text-6xl text-white text-center">Let's meet</div>
+          <div className="text-4xl sm:text-6xl text-white text-center">Let us meet</div>
 
           <div className="grid w-full max-w-sm items-center gap-4">
             <Label className="text-white text-xl sm:text-2xl" htmlFor="name">

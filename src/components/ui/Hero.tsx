@@ -111,7 +111,7 @@ const Hero: React.FC = () => {
         {/* 第二个div */}
         <div className="h-screen sticky top-0 flex flex-col justify-center left-20 text-white gap-10">
           <div>
-            <div className="text-7xl mb-5 text-bold">HI, I'M Xiaofeng Tang</div>
+            <div className="text-7xl mb-5 text-bold">HI, I AM Xiaofeng Tang</div>
             <div className="opacity-80">
               &mdash;&mdash; FULL-STACK DEVELOPER
             </div>

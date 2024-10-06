@@ -15,7 +15,7 @@ const About = () => {
         <div className="text-5xl md:text-7xl text-white">About me</div>
         <div className="text-white opacity-80 leading-8">
           I graduated from UNSW with an undergraduate degree in Mathematics and
-          graduated from Master's degree in Computer Science at USYD. I have
+          graduated from Master degree in Computer Science at USYD. I have
           hands-on experience applying Javascript, Java, C, Python in academic
           course. One of my specialties and passions is full stack web
           development. Familiar with UI/UX design, good at developing with
