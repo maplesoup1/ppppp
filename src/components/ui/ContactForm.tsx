@@ -58,6 +58,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
 
     try {
       const response = await axios.post("/api/send", formData);
+      console.log(response);
       alert('Send successfully!');
       toast({
         description: "Email sent successfully!",
