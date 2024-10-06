@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
@@ -5,6 +6,17 @@ import { Smartphone, Star } from "lucide-react";
 import Link from "next/link";
 
 const About = () => {
+
+  const handleDownload = () => {
+    const fileUrl = '/static/Resume.pdf';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.setAttribute('download', 'Xiaofeng_Tang_Resume.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen w-auto relative flex flex-col md:flex-row items-center justify-center md:justify-start">
       <div className="w-64 h-64 md:w-96 md:h-96 rounded-full bg-blue-300 mb-8 md:mb-0 md:absolute md:right-72 border-4 overflow-hidden flex justify-center items-center animate-border_animation order-first md:order-last">
@@ -31,7 +43,7 @@ const About = () => {
               <Smartphone />
             </Button>
           </Link>
-          <Button className="text-white p-6 md:p-8 font-bold rounded-lg flex gap-4">
+          <Button className="text-white p-6 md:p-8 font-bold rounded-lg flex gap-4" onClick={handleDownload}>
             Download CV
             <Star />
           </Button>

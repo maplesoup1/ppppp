@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
             }}
           />
           <Image
-            src="/img/ipad.svg"
+            src="/img/iPad.svg"
             width={500}
             height={600}
             alt="ipad"
