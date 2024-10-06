@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="min-h-screen w-auto flex flex-col justify-center items-center gap-10">
       <div className="text-8xl text-white mb-16">Learn More</div>
-      <div className="h-auto w-auto flex gap-32 justify-center">
+      <div className="h-auto w-auto flex flex-col md:flex-row gap-8 md:gap-32 items-center md:justify-center">
         <Link href="/Project">
           <ShowCard title="projects" imageUrl="/img/pc.png" />
         </Link>

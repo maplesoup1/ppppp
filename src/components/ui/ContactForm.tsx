@@ -75,82 +75,88 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="w-1/4 h-screen bg-slate-800 fixed top-0 right-0 z-50 flex flex-col gap-10 p-8 rounded-md shadow-2xl">
-      <div>
+    <div className="w-full sm:w-1/4 h-screen bg-slate-800 fixed top-0 right-0 z-50 flex flex-col rounded-md shadow-2xl overflow-hidden">
+      <div className="p-4 sm:p-8 flex-shrink-0">
         <CircleX onClick={onClose} className="cursor-pointer text-white" />
       </div>
 
-      <div className="text-6xl text-white text-center">Let's meet</div>
+      <div className="flex-grow overflow-y-auto">
+        <div className="flex flex-col gap-10 p-4 sm:p-8">
+          <div className="text-4xl sm:text-6xl text-white text-center">Let's meet</div>
 
-      <div className="grid w-full max-w-sm items-center gap-4">
-        <Label className="text-white text-2xl" htmlFor="name">
-          YOUR NAME
-        </Label>
-        <Input
-          type="text"
-          id="name"
-          className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+          <div className="grid w-full max-w-sm items-center gap-4">
+            <Label className="text-white text-xl sm:text-2xl" htmlFor="name">
+              YOUR NAME
+            </Label>
+            <Input
+              type="text"
+              id="name"
+              className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+
+          <div className="grid w-full max-w-sm items-center gap-4">
+            <Label className="text-white text-xl sm:text-2xl" htmlFor="email">
+              EMAIL
+            </Label>
+            <Input
+              type="email"
+              id="email"
+              className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className="grid w-full max-w-sm items-center gap-4">
+            <Label className="text-white text-xl sm:text-2xl" htmlFor="who">
+              WHO ARE YOU?
+            </Label>
+            <Select onValueChange={(value) => setRelationship(value)}>
+              <SelectTrigger className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Relationship to me</SelectLabel>
+                  <SelectItem value="friend">Friends</SelectItem>
+                  <SelectItem value="student">Student</SelectItem>
+                  <SelectItem value="HR">HR</SelectItem>
+                  <SelectItem value="visitor">Visitor</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="grid w-full max-w-sm items-center gap-4">
+            <Label className="text-white text-xl sm:text-2xl" htmlFor="message">
+              MESSAGES
+            </Label>
+            <Textarea
+              className="h-32 text-white opacity-60 hover:opacity-100 caret-white focus:opacity-100"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <p className="text-sm text-muted-foreground">
+              Your message will send to me by email.
+            </p>
+          </div>
+
+          {error && <div className="text-red-500">{error}</div>}
+        </div>
       </div>
 
-      <div className="grid w-full max-w-sm items-center gap-4">
-        <Label className="text-white text-2xl" htmlFor="email">
-          EMAIL
-        </Label>
-        <Input
-          type="email"
-          id="email"
-          className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+      <div className="p-4 sm:p-8 flex-shrink-0">
+        <Button
+          className="bg-white text-black rounded-lg p-3 w-full sm:w-1/3 font-bold flex justify-center"
+          onClick={handleSubmit}
+          disabled={loading}
+        >
+          {loading ? "Sending..." : "SUBMIT"}
+        </Button>
       </div>
-
-      <div className="grid w-full max-w-sm items-center gap-4">
-        <Label className="text-white text-2xl" htmlFor="who">
-          WHO ARE YOU?
-        </Label>
-        <Select onValueChange={(value) => setRelationship(value)}>
-          <SelectTrigger className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white">
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectLabel>Relationship to me</SelectLabel>
-              <SelectItem value="friend">Friends</SelectItem>
-              <SelectItem value="student">Student</SelectItem>
-              <SelectItem value="HR">HR</SelectItem>
-              <SelectItem value="visitor">Visitor</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
-
-      <div className="grid w-full max-w-sm items-center gap-4">
-        <Label className="text-white text-2xl" htmlFor="message">
-          MESSAGES
-        </Label>
-        <Textarea
-          className="h-32 text-white opacity-60 hover:opacity-100 caret-white focus:opacity-100"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <p className="text-sm text-muted-foreground">
-          Your message will send to me by email.
-        </p>
-      </div>
-
-      {error && <div className="text-red-500">{error}</div>}
-
-      <Button
-        className="bg-white text-black rounded-lg p-3 w-1/3 font-bold flex"
-        onClick={handleSubmit}
-        disabled={loading}
-      >
-        {loading ? "Sending..." : "SUBMIT"}
-      </Button>
     </div>
   );
 };

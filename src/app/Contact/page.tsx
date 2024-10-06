@@ -29,7 +29,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-1/2 h-full">
+        <div className="flex flex-col w-1/2 h-full pl-20">
         <Image src='/img/phone.png' width={800} height={600} alt="phone"/>
         </div>
       </div>

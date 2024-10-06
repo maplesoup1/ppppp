@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const page = () => {
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-[1080px] grid grid-cols-2 gap-14 mt-20">
+      <div className="w-[1080px] grid md:grid-cols-2 px-8 gap-14 mt-20">
         <div className="flex flex-col items-center ">
           <a
             href="https://gooday-own-contribution.vercel.app"
