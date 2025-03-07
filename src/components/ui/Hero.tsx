@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "./button";
 import { Book } from "lucide-react";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState<number>(20);
@@ -123,7 +124,9 @@ const Hero: React.FC = () => {
           <div className="flex gap-10">
             <Image src="/img/facebook.png" width={50} height={10} alt="icon" />
             <Image src="/img/github.png" width={50} height={10} alt="icon" />
-            <Image src="/img/linkedin.png" width={50} height={10} alt="icon" />
+            <Link href='https://www.linkedin.com/in/xiaofeng-tang-77b550227'>
+              <Image src="/img/linkedin.png" width={50} height={10} alt="icon" />
+            </Link>
             <Image src="/img/twitter.png" width={50} height={10} alt="icon" />
           </div>
 
