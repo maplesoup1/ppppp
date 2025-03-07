@@ -8,7 +8,7 @@ import Link from "next/link";
 const About = () => {
 
   const handleDownload = () => {
-    const fileUrl = '/static/Resume.pdf';
+    const fileUrl = '/static/Xiaofeng_Tang_Resume.pdf';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.setAttribute('download', 'Xiaofeng_Tang_Resume.pdf');
