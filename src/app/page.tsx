@@ -1,6 +1,7 @@
 import Hero from "@/components/ui/Hero";
 import About from "@/components/ui/About";
 import Footer from "@/components/ui/Footer";
+import Skill from "@/components/ui/Skill";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div id="#about">
         <About />
       </div>
+      <Skill />
       <Footer />
     </div>
   );
