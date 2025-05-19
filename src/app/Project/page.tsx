@@ -31,7 +31,7 @@ const page = () => {
 
         <div className="flex flex-col items-center mt-20 ">
           <a
-            href="https://gooday-own-contribution.vercel.app"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
           >

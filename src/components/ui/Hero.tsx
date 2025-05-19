@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "./button";
 import { Book } from "lucide-react";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState<number>(20);
@@ -56,7 +57,7 @@ const Hero: React.FC = () => {
             }}
           />
           <Image
-            src="/img/ipad.svg"
+            src="/img/iPad.svg"
             width={500}
             height={600}
             alt="ipad"
@@ -111,7 +112,7 @@ const Hero: React.FC = () => {
         {/* 第二个div */}
         <div className="h-screen sticky top-0 flex flex-col justify-center left-20 text-white gap-10">
           <div>
-            <div className="text-7xl mb-5 text-bold">HI, I'M Xiaofeng Tang</div>
+            <div className="text-7xl mb-5 text-bold">HI, I AM Xiaofeng Tang</div>
             <div className="opacity-80">
               &mdash;&mdash; FULL-STACK DEVELOPER
             </div>
@@ -123,7 +124,9 @@ const Hero: React.FC = () => {
           <div className="flex gap-10">
             <Image src="/img/facebook.png" width={50} height={10} alt="icon" />
             <Image src="/img/github.png" width={50} height={10} alt="icon" />
-            <Image src="/img/linkedin.png" width={50} height={10} alt="icon" />
+            <Link href='https://www.linkedin.com/in/xiaofeng-tang-77b550227'>
+              <Image src="/img/linkedin.png" width={50} height={10} alt="icon" />
+            </Link>
             <Image src="/img/twitter.png" width={50} height={10} alt="icon" />
           </div>
 
