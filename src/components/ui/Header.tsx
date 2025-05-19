@@ -72,6 +72,9 @@ const Header: React.FC<HeaderProps> = ({ onGetInTouchClick }) => {
       <Link href="/Contact">
         <div className={`font-bold hover:text-red-400 ${isActive('/Contact')}`}>CONTACT</div>
       </Link>
+      <Link href="/Blogs">
+        <div className={`font-bold hover:text-red-400 ${isActive('/Contact')}`}>BLOGS</div>
+      </Link>
     </>
   );
 
