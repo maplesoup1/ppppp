@@ -117,6 +117,52 @@ const page = () => {
             <div className="text-right font-bold">OPENAI INTERFACE</div>
           </div>
         </div>
+
+        <div className="flex flex-col items-center mt-20 ">
+          <a
+            href="https://scams.report"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div className="inline-block" whileHover={{ scale: 1.05 }}>
+              <Image
+                src="/img/WechatIMG765.jpg"
+                width={600}
+                height={400}
+                alt="gd"
+                className="w-[550px] h-[350px] object-cover rounded-2xl border-4 border-blue-500 cursor-pointer"
+              />
+            </motion.div>
+          </a>
+          <div className="flex justify-between w-full mt-4 text-white text-3xl">
+            <div className="opacity-70">06</div>
+            <div className="text-right font-bold">Scam report</div>
+          </div>
+        </div>
+
+
+        <div className="flex flex-col items-center">
+          <a
+            href="https://recam.com.au/app-wp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div className="inline-block" whileHover={{ scale: 1.05 }}>
+              <Image
+                src="/img/recam.jpg"
+                width={600}
+                height={400}
+                alt="gd"
+                className="w-[550px] h-[350px] object-cover rounded-2xl border-4 border-blue-500 cursor-pointer"
+              />
+            </motion.div>
+          </a>
+          <div className="flex justify-between w-full mt-4 text-white text-3xl">
+            <div className="opacity-70">07</div>
+            <div className="text-right font-bold">Real Estate Imagery</div>
+          </div>
+        </div>
+
       </div>
     </div>
   );
