@@ -10,7 +10,7 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    id: '1',
+    id: 'unitycoming',
     title: 'Coming soon',
     excerpt: 'Hello world',
     publishDate: '2025-01-15',
@@ -42,7 +42,7 @@ export default function BlogsPage() {
           <article key={post.id} className="bg-white p-6 rounded-lg shadow">
             <h2 className="text-xl font-semibold mb-2">
               <Link 
-                href={`/blogs/${post.id}`}
+                href={`/Blogs/${post.id}`}
                 className="text-blue-600 hover:text-blue-800"
               >
                 {post.title}
