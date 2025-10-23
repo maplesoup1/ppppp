@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "./button";
 import { Smartphone, Star } from "lucide-react";
 import Link from "next/link";
+import { ABOUT_ME } from "@/lib/content";
 
 const About = () => {
 
@@ -26,15 +27,7 @@ const About = () => {
       <div className="w-full md:w-1/3 md:absolute md:left-52 flex flex-col gap-11 p-4 md:p-0">
         <div className="text-5xl md:text-7xl text-white">About me</div>
         <div className="text-white opacity-80 leading-8">
-          I graduated from UNSW with an undergraduate degree in Mathematics and
-          graduated from Master degree in Computer Science at USYD. I have
-          hands-on experience applying Javascript, Java, C, Python in academic
-          course. One of my specialties and passions is full stack web
-          development. Familiar with UI/UX design, good at developing with
-          nextjs framework. In terms of front-end, able to create dynamic web
-          pages with certain effects. For back-end, understand most of the
-          database operations, and familiar with most of the back-end API
-          interface integration.
+          {ABOUT_ME}
         </div>
         <div className="flex gap-10 space-x-4">
           <Link href="/Contact">

@@ -59,15 +59,34 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
     try {
       const response = await axios.post("/api/send", formData);
       console.log(response);
-      alert('Send successfully!');
+
       toast({
+        title: "Success!",
         description: "Email sent successfully!",
       });
+
+      // Reset form
+      setName("");
+      setEmail("");
+      setRelationship("");
+      setMessage("");
     } catch (err) {
       if (axios.isAxiosError(err)) {
-        setError(err.response?.data?.error || "Failed to send email");
+        const errorMessage = err.response?.data?.error || "Failed to send email";
+        setError(errorMessage);
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: errorMessage,
+        });
       } else {
-        setError("An unknown error occurred");
+        const errorMessage = "An unknown error occurred";
+        setError(errorMessage);
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: errorMessage,
+        });
       }
     } finally {
       setLoading(false);
@@ -91,9 +110,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
             <Input
               type="text"
               id="name"
-              className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white"
+              className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white disabled:opacity-40 disabled:cursor-not-allowed"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              disabled={loading}
             />
           </div>
 
@@ -104,9 +124,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
             <Input
               type="email"
               id="email"
-              className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white"
+              className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white disabled:opacity-40 disabled:cursor-not-allowed"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              disabled={loading}
             />
           </div>
 
@@ -114,8 +135,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
             <Label className="text-white text-xl sm:text-2xl" htmlFor="who">
               WHO ARE YOU?
             </Label>
-            <Select onValueChange={(value) => setRelationship(value)}>
-              <SelectTrigger className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white">
+            <Select
+              onValueChange={(value) => setRelationship(value)}
+              disabled={loading}
+              value={relationship}
+            >
+              <SelectTrigger className="opacity-60 hover:opacity-100 caret-white focus:opacity-100 text-white disabled:opacity-40 disabled:cursor-not-allowed">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -135,9 +160,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
               MESSAGES
             </Label>
             <Textarea
-              className="h-32 text-white opacity-60 hover:opacity-100 caret-white focus:opacity-100"
+              className="h-32 text-white opacity-60 hover:opacity-100 caret-white focus:opacity-100 disabled:opacity-40 disabled:cursor-not-allowed"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              disabled={loading}
             />
             <p className="text-sm text-muted-foreground">
               Your message will send to me by email.

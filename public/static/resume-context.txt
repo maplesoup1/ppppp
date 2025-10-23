@@ -1,0 +1,71 @@
+XIAOFENG TANG (TIMMY)
+Contact: (+61) 415480728 | timmy000728@gmail.com
+LinkedIn | Portfolio | Github | Twitter
+
+CAREER PROFILE
+A proactive and self-motivated full-stack developer with 2 years working experience in front-end (React, NextJs, React Native) and back-end (ASP.NET, Spring boot, NestJs) development. I have hands-on experience from multiple projects and work knowledge with both coding and DevOps. Looking forward to embracing my next career challenge.
+
+RELEVANT SKILLS
+Programming Languages: TypeScript, JavaScript, Java, C#, SQL, HTML, CSS
+Database: MySQL, PostgreSQL, SQL Server, MongoDB
+Framework & Library: React, NextJs, TailwindCss, Asp.Net, Spring boot, NestJs
+Cloud: AWS, Google Cloud, Azure, GCP
+DevOps: GitHub action, Docker, AWS CodeCommit, Jira, Slack
+Test: Jest/React Testing library, xUnit, Swagger UI, Postman
+Methodologies: Agile
+
+WORKING EXPERIENCE
+
+Cyberoo.ai - Full-stack developer (March 2025 - present) - Australia
+• Delivered more than 30+ both front-end and back-end functional points and repair tasks.
+• Integrated Google Gemini and OpenAI API with structured prompt engineering for real-time cybersecurity threat analysis, achieving automated scam detection and risk classification without traditional RAG architecture.
+• Contributed to backend optimization by assisting in quota control and re-evaluation logic (model fallback and hallucination mitigation), implementing components of the admin management system (interfaces and filters), and supporting database query refactoring to reduce redundant calculations and improve performance.
+• Responsible for end-to-end multi-language support system, enabling dynamic translation of AI responses and full UI content based on user language settings, delivering internationalization (i18n) support for global users.
+• Participated in performance improvements by supporting database query refactoring to remove redundant calculations and by implementing tasks in parallel processing (parallel streams and custom thread pools), significantly enhancing system throughput.
+• Familiar with AWS CodeCommit, RDS, S3, and CloudWatch within the existing CI/CD pipeline; ensured development work did not disrupt version control or deployment processes, and used CloudWatch and RDS to troubleshoot backend issues after deployment.
+
+RECAM - Full-stack developer (July 2024 - March 2025) - Sydney, Australia
+• Designed and developed scalable RESTful APIs from scratch using ASP.NET Core with a layered architecture (Controller, Service, Repository, DTO, Entity) to ensure maintainability and extensibility.
+• Built and configured the MySQL database system using ASP.NET Core and Entity Framework, setting up ORM mappings and connection testing to ensure stable and efficient data access.
+• Developed reusable and responsive React components in TypeScript by implementing provided UI/UX designs, ensuring clean code structure, modularization, and seamless cross-device compatibility.
+• Developed unit tests components for front-end interface using React Testing Library and Jest, and for backend service methods using xUnit with Arrange-Act-Assert pattern, additionally conducted API testing through Postman and swagger UI to ensure end-to-end system reliability.
+• Documented API specifications and component usage guidelines to facilitate team onboarding and improve cross-functional collaboration.
+
+Guangzhou Smart City Investment - Front-end developer intern (June 2024 - July 2024) - Guangzhou, China
+• Responsible for maintaining and upgrading the company's official corporate website, as well as the company's internal office automation system.
+• Participated in the front-end development of the data management platform, using Vue as the technology stack, and used the Amap API to facilitate users to mark areas.
+• Cooperate with back-end developers to complete the docking and debugging of platform interfaces.
+
+PROJECT EXPERIENCE
+
+Scam.Report (Cyberoo.ai)
+A platform that combines generative AI with the reasoning capabilities of a cybersecurity analysis database, focusing on analyzing user-submitted information about fraudulent websites.
+
+Optimus (Cyberoo.ai)
+A customer-focused platform and trusted brand protection services with advanced detection and enforcement technologies, creating a compelling, end-to-end scam and phishing protection solution for enterprise, government, and regulated sectors.
+
+Corina Email-to-PDF Conversion System (Contract Project - CareGp, June 2025, 3-week engagement)
+• Independently designed and developed a production-level system using NestJS + TypeScript to convert Gmail and Outlook emails into real-time PDF documents.
+• Integrated Google Gmail API and Microsoft Graph API to support multi-user OAuth 2.0 authentication, with token auto-refresh and session-based access control.
+• Implemented real-time Webhook subscription handling with retry logic, logging, and error resilience for high-reliability message processing.
+• Achieved 90%+ automation efficiency, with millisecond-level webhook response time and scalable support for both Gmail and Outlook platforms.
+
+Recam (RECAM)
+Online listings and related services for both residential and commercial properties.
+
+Gooday Website (University of Sydney Capstone Project)
+A web application leveraging AI personal assistants to streamline life admin bookings between businesses, consumers, and networks.
+• Hosted various team meetings, including initial UI design, client meetings, and weekly code review sessions.
+• ChatGPT API integration in chat assistant component, with fine-tuning and specific instructions, the chat assistant can effectively answer user questions while staying within its designated scope.
+• Deliver component-based design concepts to team members to ensure reusability, improve efficiency, and facilitate testing.
+• Developed responsive and dynamic effects for various components and pages, such as the hero page, review section, and chat assistant section, utilizing Tailwind CSS, Framer Motion, ShadCN UI, and other third-party libraries.
+• Wrote unit tests to verify component rendering accuracy, responsiveness, and logical conditional rendering for accessibility.
+
+Student-Management-System (Toy-project)
+• Designed and developed a full-stack Student Management System to streamline administrative processes for students, teachers, and courses.
+• Implemented core time-slot based enrolment functionality with integrated intelligent conflict detection and role-based access control, ensuring efficient and conflict-free scheduling.
+• Leveraging a modern tech stack including Spring Boot, React, and PostgreSQL (Supabase), this project demonstrates proficiency in building robust and scalable enterprise-grade applications.
+
+EDUCATION
+Master of Computer Science - University of Sydney (February 2023 - December 2024)
+Bachelor of Mathematics - University of New South Wales (February 2020 - December 2022)
